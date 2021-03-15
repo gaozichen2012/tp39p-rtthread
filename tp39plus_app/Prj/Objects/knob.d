@@ -1,0 +1,9 @@
+.\objects\knob.o: ..\bsp\knob.c
+.\objects\knob.o: ..\bsp\knob.h
+.\objects\knob.o: ..\bsp\tom_data.h
+.\objects\knob.o: ..\bsp\tom_interface.h
+.\objects\knob.o: ..\bsp\tom_data_conversion.h
+.\objects\knob.o: ..\bsp\tom_interface.h
+.\objects\knob.o: ..\bsp\74hc595\hc595.h
+.\objects\knob.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
+.\objects\knob.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h

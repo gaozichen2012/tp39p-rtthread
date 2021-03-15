@@ -1,0 +1,11 @@
+.\objects\lcd_app.o: ..\bsp\lcd\lcd_app.c
+.\objects\lcd_app.o: ..\bsp\lcd\lcd_app.h
+.\objects\lcd_app.o: ..\bsp\tom_data.h
+.\objects\lcd_app.o: ..\bsp\lcd\lcd_drv.h
+.\objects\lcd_app.o: ..\bsp\lcd\font.h
+.\objects\lcd_app.o: ..\bsp\tom_interface.h
+.\objects\lcd_app.o: ..\bsp\tom_data_conversion.h
+.\objects\lcd_app.o: ..\bsp\tom_interface.h
+.\objects\lcd_app.o: ..\bsp\74hc595\hc595.h
+.\objects\lcd_app.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lcd_app.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h

@@ -1,0 +1,28 @@
+
+T28E0 000:320 SEGGER J-Link V4.92 Log File (0001ms, 0260ms total)
+T28E0 000:320 DLL Compiled: Sep 30 2014 09:33:42 (0001ms, 0260ms total)
+T28E0 000:320 Logging started @ 2020-12-26 09:46 (0001ms, 0260ms total)
+T28E0 000:321 JLINK_SetWarnOutHandler(...) (0000ms, 0260ms total)
+T28E0 000:321 JLINK_OpenEx(...)
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N: 20090937
+Feature(s): RDI,FlashDL,FlashBP,JFlash,GDBFull  returns O.K. (0268ms, 0528ms total)
+T28E0 000:589 JLINK_SetErrorOutHandler(...) (0000ms, 0528ms total)
+T28E0 000:589 JLINK_ExecCommand("ProjectFile = "F:\0-repository\tp39plus-default\tp39plus_boot\Prj\JLinkSettings.ini"", ...)Device "STM32F030C8" selected (64 KB flash, 8 KB RAM).  returns 0x00 (0007ms, 0535ms total)
+T28E0 000:598 JLINK_ExecCommand("Device = STM32F030CC", ...)Device "STM32F030C8" selected (64 KB flash, 8 KB RAM).  returns 0x00 (0010ms, 0545ms total)
+T28E0 000:608 JLINK_ExecCommand("DisableConnectionTimeout", ...)  returns 0x01 (0000ms, 0545ms total)
+T28E0 000:608 JLINK_GetHardwareVersion()  returns 0x11170 (0000ms, 0545ms total)
+T28E0 000:608 JLINK_GetDLLVersion()  returns 49200 (0000ms, 0545ms total)
+T28E0 000:608 JLINK_GetFirmwareString(...) (0000ms, 0545ms total)
+T28E0 000:625 JLINK_GetDLLVersion()  returns 49200 (0000ms, 0545ms total)
+T28E0 000:625 JLINK_GetCompileDateTime() (0000ms, 0545ms total)
+T28E0 000:630 JLINK_GetFirmwareString(...) (0000ms, 0545ms total)
+T28E0 000:634 JLINK_GetHardwareVersion()  returns 0x11170 (0000ms, 0545ms total)
+T28E0 000:645 JLINK_TIF_Select(JLINKARM_TIF_SWD)  returns 0x00 (0000ms, 0545ms total)
+T28E0 000:645 JLINK_SetSpeed(500) (0001ms, 0546ms total)
+T28E0 000:646 JLINK_GetId() >0x108 TIF> >0x108 TIF>STM32F0xxx: Can not connect to CPU. Trying connect under reset. >0x108 TIF> >0x108 TIF>
+  ***** Error: STM32F0xxx: Connecting to CPU via connect under reset failed.  returns 0x00000000 (0513ms, 1059ms total)
+T28E0 029:190 JLINK_Close() (0000ms, 1059ms total)
+T28E0 029:190  (0000ms, 1059ms total)
+T28E0 029:190 Closed (0000ms, 1059ms total)

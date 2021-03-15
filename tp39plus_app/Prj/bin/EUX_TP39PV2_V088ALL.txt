@@ -1,0 +1,6 @@
+目标文件:F:\0-repository\tp39plus-default\tp39plus_app\Prj\bin\EUX_TP39PV2_V088ALL.bin   大小:0x000253A0
+各部分大小如下:
+
+索引                        文件名                                            大小              偏移量            强制插入
+ 1      F:\0-repository\tp39plus-default\tp39plus_app\Prj\bin\tp39plus_boot_EN.bin        0x000026B0        0x00000000             否
+ 2      F:\0-repository\tp39plus-default\tp39plus_app\Prj\bin\tp39plus_app.bin        0x000213A0        0x00004000             否

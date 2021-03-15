@@ -1,0 +1,6 @@
+目标文件:F:\0-repository\tp39plus-default\tp39plus_app\Prj\bin\LEN_CL860V2_Z116ALL.bin   大小:0x00031478
+各部分大小如下:
+
+索引                        文件名                                            大小              偏移量            强制插入
+ 1      F:\0-repository\tp39plus-default\tp39plus_app\Prj\bin\tp39plus_boot_CN.bin        0x000026B4        0x00000000             否
+ 2      F:\0-repository\tp39plus-default\tp39plus_app\Prj\bin\tp39plus_app.bin        0x0002D478        0x00004000             否

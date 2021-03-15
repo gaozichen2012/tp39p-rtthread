@@ -1,0 +1,12 @@
+.\objects\tom_data_conversion.o: ..\bsp\tom_data_conversion.c
+.\objects\tom_data_conversion.o: ..\bsp\tom_data_conversion.h
+.\objects\tom_data_conversion.o: ..\bsp\tom_interface.h
+.\objects\tom_data_conversion.o: ..\bsp\tom_data.h
+.\objects\tom_data_conversion.o: ..\bsp\tom_data_conversion.h
+.\objects\tom_data_conversion.o: ..\bsp\74hc595\hc595.h
+.\objects\tom_data_conversion.o: ..\bsp\tom_interface.h
+.\objects\tom_data_conversion.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
+.\objects\tom_data_conversion.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\tom_data_conversion.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\tom_data_conversion.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\tom_data_conversion.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\ctype.h
