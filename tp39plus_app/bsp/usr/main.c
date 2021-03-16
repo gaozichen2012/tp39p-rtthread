@@ -10,7 +10,7 @@
 #include "ui.h"
 #include "telephone.h"
 #include "typewriting.h"
-
+#include <rtthread.h>
 #if 1
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -34,6 +34,14 @@ __IO uint32_t VectorTable[48] __attribute__((section(".RAMVectorTable")));
 	} while (0)
 #endif
 
+int app_vector_redirection(void)
+{
+	rt_memcpy((void*)0x20000000, (void*)0x08004000, 48*4); 
+	SYSCFG->CFGR1 |= 0x03;
+	return 0;
+}
+INIT_BOARD_EXPORT(app_vector_redirection);
+	
 int main(void)
 {
 	uint8_t i;
@@ -74,6 +82,14 @@ int main(void)
 
 	while (1)
 	{
+		#if 1
+		set_gpio_state(GPIO_RED_LED, off);
+		set_gpio_state(GPIO_GREEN_LED, on);
+		rt_thread_mdelay(500);
+		set_gpio_state(GPIO_RED_LED, on);
+		set_gpio_state(GPIO_GREEN_LED, off);
+		rt_thread_mdelay(500);
+		#else
 		main_process_key();
 
 		poc_first_deal(); //poc_process(poc.module_data.rx_buf);
@@ -84,6 +100,7 @@ int main(void)
 #if (DEF_IWDG)
 //CLRWDT();
 #endif
+		#endif
 	}
 }
 

@@ -85,6 +85,7 @@ void NMI_Handler(void)
   * @param  None
   * @retval None
   */
+#if 0//rtthread
 void HardFault_Handler(void)
 {
 	//	NVIC_SystemReset();
@@ -95,7 +96,7 @@ void HardFault_Handler(void)
 		NVIC_SystemReset();
 	}
 }
-
+#endif
 /**
   * @brief  This function handles SVCall exception.
   * @param  None
@@ -110,15 +111,17 @@ void SVC_Handler(void)
   * @param  None
   * @retval None
   */
+#if 0//rtthread
 void PendSV_Handler(void)
 {
 }
-
+#endif
 /**
   * @brief  This function handles SysTick Handler.
   * @param  None
   * @retval None
   */
+#if 0//rtthread
 void SysTick_Handler(void)
 {
 	static u32 custom_date_time_count = 0;
@@ -156,7 +159,7 @@ void SysTick_Handler(void)
 		while_timeout--;
 	}
 }
-
+#endif
 /*******************************************************************************
 * Function Name  : DMAChannel1_IRQHandler
 * Description    : This function handles DMA Stream 1 interrupt request.

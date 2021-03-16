@@ -19,7 +19,7 @@
 #include "stm32f0xx_adc.h"
 #include "stm32f0xx_dma.h"
 #include "stm32f0xx_tim.h"
-
+#include <rtthread.h>
 //extern UART_HandleTypeDef huart1;
 //extern UART_HandleTypeDef huart2;
 //extern DMA_HandleTypeDef hdma_usart2_tx;
@@ -460,6 +460,9 @@ void select_system_clock_48M_or_8M(clock_type type)
 
 void delay_ms(u32 ms)
 {
+	#if 1
+	rt_thread_mdelay(ms);
+	#else
 	uint32_t i, j;
 
 	SEGGER_RTT_printf(0, "delay_ms(%d)\r\n", ms);
@@ -479,6 +482,7 @@ void delay_ms(u32 ms)
 				;
 		}
 	}
+	#endif
 }
 
 #ifdef UART1_DEVICE

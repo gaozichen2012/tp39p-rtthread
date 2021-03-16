@@ -49,3 +49,11 @@
 .\objects\tom_interface.o: ..\bsp\keyboard\keyboard.h
 .\objects\tom_interface.o: ..\bsp\date_and_time.h
 .\objects\tom_interface.o: ..\bsp\knob.h
+.\objects\tom_interface.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtthread.h
+.\objects\tom_interface.o: .\RTE\RTOS\rtconfig.h
+.\objects\tom_interface.o: .\RTE\_tp39p\RTE_Components.h
+.\objects\tom_interface.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtdebug.h
+.\objects\tom_interface.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtdef.h
+.\objects\tom_interface.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtservice.h
+.\objects\tom_interface.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtm.h
+.\objects\tom_interface.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtthread.h

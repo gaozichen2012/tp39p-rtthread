@@ -51,3 +51,11 @@
 .\objects\main.o: ..\bsp\ui.h
 .\objects\main.o: ..\bsp\typewriting.h
 .\objects\main.o: ..\bsp\lcd\lcd_app.h
+.\objects\main.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtthread.h
+.\objects\main.o: .\RTE\RTOS\rtconfig.h
+.\objects\main.o: .\RTE\_tp39p\RTE_Components.h
+.\objects\main.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtdebug.h
+.\objects\main.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtdef.h
+.\objects\main.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtservice.h
+.\objects\main.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtm.h
+.\objects\main.o: C:\Keil_v5_525\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtthread.h
