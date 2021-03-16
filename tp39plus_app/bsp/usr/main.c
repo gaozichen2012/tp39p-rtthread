@@ -44,22 +44,7 @@ INIT_BOARD_EXPORT(app_vector_redirection);
 	
 int main(void)
 {
-	uint8_t i;
 	SysTick_Config(48000);
-
-	/* Copy the vector table from the Flash (mapped at the base of the application
-		 load address 0x08004000) to the base address of the SRAM at 0x20000000. */
-	for (i = 0; i < 48; i++)
-	{
-		VectorTable[i] = *(__IO uint32_t *)(APPLICATION_ADDRESS + (i << 2));
-	}
-
-	/* Enable the SYSCFG peripheral clock*/
-	//  __HAL_RCC_SYSCFG_CLK_ENABLE();
-	/* Remap SRAM at 0x00000000 */
-	__HAL_SYSCFG_REMAPMEMORY_SRAM();
-	NVIC_DisableIRQ(EXTI4_15_IRQn);
-	delay_ms(10);
 
 #if (DEF_IWDG)
 //init_iwdg();
