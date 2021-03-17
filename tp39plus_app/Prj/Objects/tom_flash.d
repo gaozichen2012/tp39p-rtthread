@@ -1,7 +1,7 @@
 .\objects\tom_flash.o: ..\bsp\tom_flash.c
 .\objects\tom_flash.o: ..\lib\st_lib\inc\stm32f0xx.h
 .\objects\tom_flash.o: ..\lib\st_lib\inc\core_cm0.h
-.\objects\tom_flash.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\tom_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\tom_flash.o: ..\lib\st_lib\inc\core_cmInstr.h
 .\objects\tom_flash.o: ..\lib\st_lib\inc\core_cmFunc.h
 .\objects\tom_flash.o: ..\lib\st_lib\inc\system_stm32f0xx.h
@@ -30,7 +30,7 @@
 .\objects\tom_flash.o: ..\lib\st_lib\inc\stm32f0xx_misc.h
 .\objects\tom_flash.o: ..\bsp\tom_flash.h
 .\objects\tom_flash.o: ..\bsp\tom_data.h
-.\objects\tom_flash.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
+.\objects\tom_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\tom_flash.o: ..\bsp\poc.h
 .\objects\tom_flash.o: ..\bsp\tom_interface.h
 .\objects\tom_flash.o: ..\bsp\tom_data_conversion.h
@@ -41,5 +41,5 @@
 .\objects\tom_flash.o: ..\bsp\telephone.h
 .\objects\tom_flash.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\tom_flash.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\tom_flash.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\tom_flash.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\tom_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\tom_flash.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

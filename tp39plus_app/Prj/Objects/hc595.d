@@ -1,7 +1,7 @@
 .\objects\hc595.o: ..\bsp\74hc595\hc595.c
 .\objects\hc595.o: ..\lib\st_lib\inc\stm32f0xx.h
 .\objects\hc595.o: ..\lib\st_lib\inc\core_cm0.h
-.\objects\hc595.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hc595.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\hc595.o: ..\lib\st_lib\inc\core_cmInstr.h
 .\objects\hc595.o: ..\lib\st_lib\inc\core_cmFunc.h
 .\objects\hc595.o: ..\lib\st_lib\inc\system_stm32f0xx.h
@@ -34,4 +34,4 @@
 .\objects\hc595.o: ..\bsp\tom_data_conversion.h
 .\objects\hc595.o: ..\bsp\tom_interface.h
 .\objects\hc595.o: ..\bsp\74hc595\hc595.h
-.\objects\hc595.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
+.\objects\hc595.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

@@ -5,10 +5,10 @@
 .\objects\typewriting.o: ..\bsp\version.h
 .\objects\typewriting.o: ..\bsp\lcd\lcd_api.h
 .\objects\typewriting.o: ..\bsp\lcd\lcd_app.h
-.\objects\typewriting.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\String.h
+.\objects\typewriting.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\String.h
 .\objects\typewriting.o: ..\bsp\language.h
-.\objects\typewriting.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\typewriting.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\typewriting.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\typewriting.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
 .\objects\typewriting.o: ..\bsp\lcd\font.h
 .\objects\typewriting.o: ..\bsp\main_process.h
 .\objects\typewriting.o: ..\bsp\telephone.h
@@ -16,4 +16,4 @@
 .\objects\typewriting.o: ..\bsp\tom_data_conversion.h
 .\objects\typewriting.o: ..\bsp\tom_interface.h
 .\objects\typewriting.o: ..\bsp\74hc595\hc595.h
-.\objects\typewriting.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\typewriting.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h

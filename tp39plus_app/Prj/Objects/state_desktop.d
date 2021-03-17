@@ -1,0 +1,13 @@
+.\objects\state_desktop.o: ..\bsp\state_desktop.c
+.\objects\state_desktop.o: ..\bsp\Zpoc.h
+.\objects\state_desktop.o: ..\bsp\state.h
+.\objects\state_desktop.o: ..\bsp\state_desktop.h
+.\objects\state_desktop.o: D:\Keil_v5\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtthread.h
+.\objects\state_desktop.o: .\RTE\RTOS\rtconfig.h
+.\objects\state_desktop.o: .\RTE\_tp39p\RTE_Components.h
+.\objects\state_desktop.o: D:\Keil_v5\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtdebug.h
+.\objects\state_desktop.o: D:\Keil_v5\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtdef.h
+.\objects\state_desktop.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\state_desktop.o: D:\Keil_v5\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtservice.h
+.\objects\state_desktop.o: D:\Keil_v5\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtm.h
+.\objects\state_desktop.o: D:\Keil_v5\ARM\PACK\RealThread\RT-Thread\3.1.3\include\rtthread.h

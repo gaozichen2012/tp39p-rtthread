@@ -1,0 +1,7 @@
+#ifndef __STATE_DESKTOP_H__
+#define __STATE_DESKTOP_H__
+
+#define POC_DESKTOP_TIME_REFRESH_CNT 5
+#define POC_DESKTOP_LOCK_LOCK_CNT 20
+
+#endif

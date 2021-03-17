@@ -5,8 +5,8 @@
 .\objects\timed.o: ..\bsp\tom_data_conversion.h
 .\objects\timed.o: ..\bsp\tom_interface.h
 .\objects\timed.o: ..\bsp\74hc595\hc595.h
-.\objects\timed.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\timed.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\timed.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\timed.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\timed.o: ..\bsp\ec20_at_cmd.h
 .\objects\timed.o: ..\bsp\version.h
 .\objects\timed.o: ..\bsp\poc.h
@@ -43,8 +43,8 @@
 .\objects\timed.o: ..\bsp\telephone.h
 .\objects\timed.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\timed.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\timed.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\timed.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\timed.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\timed.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\timed.o: ..\bsp\gps.h
 .\objects\timed.o: ..\bsp\ui.h
 .\objects\timed.o: ..\bsp\battery.h

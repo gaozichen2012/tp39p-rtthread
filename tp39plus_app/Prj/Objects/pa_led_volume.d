@@ -5,8 +5,8 @@
 .\objects\pa_led_volume.o: ..\bsp\tom_data_conversion.h
 .\objects\pa_led_volume.o: ..\bsp\tom_interface.h
 .\objects\pa_led_volume.o: ..\bsp\74hc595\hc595.h
-.\objects\pa_led_volume.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\pa_led_volume.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\pa_led_volume.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\pa_led_volume.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\pa_led_volume.o: ..\bsp\poc.h
 .\objects\pa_led_volume.o: ..\bsp\ec20_at_cmd.h
 .\objects\pa_led_volume.o: ..\bsp\version.h
@@ -43,8 +43,8 @@
 .\objects\pa_led_volume.o: ..\bsp\telephone.h
 .\objects\pa_led_volume.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\pa_led_volume.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\pa_led_volume.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\pa_led_volume.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\pa_led_volume.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\pa_led_volume.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\pa_led_volume.o: ..\bsp\ui.h
 .\objects\pa_led_volume.o: ..\bsp\lcd\lcd_api.h
 .\objects\pa_led_volume.o: ..\bsp\new_ui_data.h

@@ -5,8 +5,8 @@
 .\objects\poc.o: ..\bsp\tom_data_conversion.h
 .\objects\poc.o: ..\bsp\tom_interface.h
 .\objects\poc.o: ..\bsp\74hc595\hc595.h
-.\objects\poc.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\poc.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\poc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\poc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\poc.o: ..\bsp\ec20_at_cmd.h
 .\objects\poc.o: ..\bsp\version.h
 .\objects\poc.o: ..\lib\st_lib\inc\stm32f0xx_rtc.h
@@ -42,12 +42,12 @@
 .\objects\poc.o: ..\bsp\telephone.h
 .\objects\poc.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\poc.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\poc.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\poc.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\poc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\poc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\poc.o: ..\bsp\ui.h
 .\objects\poc.o: ..\bsp\lcd\lcd_api.h
 .\objects\poc.o: ..\bsp\pa_led_volume.h
-.\objects\poc.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\poc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\poc.o: ..\bsp\timed.h
 .\objects\poc.o: ..\bsp\language.h
 .\objects\poc.o: ..\bsp\battery.h

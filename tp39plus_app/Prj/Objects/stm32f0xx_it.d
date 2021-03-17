@@ -2,7 +2,7 @@
 .\objects\stm32f0xx_it.o: ..\bsp\usr\stm32f0xx_it.h
 .\objects\stm32f0xx_it.o: ..\lib\st_lib\inc\stm32f0xx.h
 .\objects\stm32f0xx_it.o: ..\lib\st_lib\inc\core_cm0.h
-.\objects\stm32f0xx_it.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f0xx_it.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f0xx_it.o: ..\lib\st_lib\inc\core_cmInstr.h
 .\objects\stm32f0xx_it.o: ..\lib\st_lib\inc\core_cmFunc.h
 .\objects\stm32f0xx_it.o: ..\lib\st_lib\inc\system_stm32f0xx.h
@@ -29,8 +29,8 @@
 .\objects\stm32f0xx_it.o: ..\lib\st_lib\inc\stm32f0xx_usart.h
 .\objects\stm32f0xx_it.o: ..\lib\st_lib\inc\stm32f0xx_wwdg.h
 .\objects\stm32f0xx_it.o: ..\lib\st_lib\inc\stm32f0xx_misc.h
-.\objects\stm32f0xx_it.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\stm32f0xx_it.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
+.\objects\stm32f0xx_it.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\stm32f0xx_it.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\stm32f0xx_it.o: ..\bsp\key\key.h
 .\objects\stm32f0xx_it.o: ..\bsp\tom_interface.h
 .\objects\stm32f0xx_it.o: ..\bsp\tom_data.h
@@ -45,7 +45,7 @@
 .\objects\stm32f0xx_it.o: ..\bsp\telephone.h
 .\objects\stm32f0xx_it.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\stm32f0xx_it.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\stm32f0xx_it.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\stm32f0xx_it.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\stm32f0xx_it.o: ..\bsp\keyboard\keyboard.h
 .\objects\stm32f0xx_it.o: ..\bsp\date_and_time.h
 .\objects\stm32f0xx_it.o: ..\bsp\knob.h

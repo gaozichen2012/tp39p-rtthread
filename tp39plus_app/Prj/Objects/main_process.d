@@ -6,8 +6,8 @@
 .\objects\main_process.o: ..\bsp\tom_data_conversion.h
 .\objects\main_process.o: ..\bsp\tom_interface.h
 .\objects\main_process.o: ..\bsp\74hc595\hc595.h
-.\objects\main_process.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\main_process.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main_process.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main_process.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main_process.o: ..\bsp\ui.h
 .\objects\main_process.o: ..\bsp\version.h
 .\objects\main_process.o: ..\bsp\poc.h
@@ -45,12 +45,12 @@
 .\objects\main_process.o: ..\bsp\telephone.h
 .\objects\main_process.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\main_process.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\main_process.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\main_process.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\main_process.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main_process.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\main_process.o: ..\bsp\pa_led_volume.h
 .\objects\main_process.o: ..\bsp\timed.h
 .\objects\main_process.o: ..\bsp\language.h
-.\objects\main_process.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main_process.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main_process.o: ..\bsp\typewriting.h
 .\objects\main_process.o: ..\bsp\lcd\lcd_api.h
 .\objects\main_process.o: ..\bsp\lcd\lcd_app.h

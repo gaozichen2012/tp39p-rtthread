@@ -5,13 +5,13 @@
 .\objects\lcd_api.o: ..\bsp\lcd\lcd_app.h
 .\objects\lcd_api.o: ..\bsp\language.h
 .\objects\lcd_api.o: ..\bsp\new_ui_data.h
-.\objects\lcd_api.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lcd_api.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\lcd_api.o: ..\bsp\poc.h
 .\objects\lcd_api.o: ..\bsp\tom_interface.h
 .\objects\lcd_api.o: ..\bsp\tom_data_conversion.h
 .\objects\lcd_api.o: ..\bsp\tom_interface.h
 .\objects\lcd_api.o: ..\bsp\74hc595\hc595.h
-.\objects\lcd_api.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcd_api.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\lcd_api.o: ..\bsp\ec20_at_cmd.h
 .\objects\lcd_api.o: ..\lib\st_lib\inc\stm32f0xx_rtc.h
 .\objects\lcd_api.o: ..\lib\st_lib\inc\stm32f0xx.h
@@ -46,6 +46,6 @@
 .\objects\lcd_api.o: ..\bsp\telephone.h
 .\objects\lcd_api.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\lcd_api.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\lcd_api.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\lcd_api.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\lcd_api.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\lcd_api.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\lcd_api.o: ..\bsp\ui.h

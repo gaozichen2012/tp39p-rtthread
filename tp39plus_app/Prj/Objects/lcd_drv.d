@@ -5,8 +5,8 @@
 .\objects\lcd_drv.o: ..\bsp\tom_data_conversion.h
 .\objects\lcd_drv.o: ..\bsp\tom_interface.h
 .\objects\lcd_drv.o: ..\bsp\74hc595\hc595.h
-.\objects\lcd_drv.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\lcd_drv.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcd_drv.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lcd_drv.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\lcd_drv.o: ..\lib\st_lib\inc\stm32f0xx.h
 .\objects\lcd_drv.o: ..\lib\st_lib\inc\core_cm0.h
 .\objects\lcd_drv.o: ..\lib\st_lib\inc\core_cmInstr.h

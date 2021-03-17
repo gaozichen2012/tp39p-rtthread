@@ -82,7 +82,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>1</RunUserProg2>
-            <UserProg1Name>C:\Keil_v5_525\ARM\ARMCC\bin\fromelf.exe --bin -o ./bin/@L.bin ./Objects/@L.axf</UserProg1Name>
+            <UserProg1Name>D:\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin -o ./bin/@L.bin ./Objects/@L.axf</UserProg1Name>
             <UserProg2Name>find   "Total R"    ./Listings/@L.map</UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -471,6 +471,21 @@
               <FileName>ui.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bsp\ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>state.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\state.c</FilePath>
+            </File>
+            <File>
+              <FileName>state_desktop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\state_desktop.c</FilePath>
+            </File>
+            <File>
+              <FileName>state_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\state_init.c</FilePath>
             </File>
           </Files>
         </Group>

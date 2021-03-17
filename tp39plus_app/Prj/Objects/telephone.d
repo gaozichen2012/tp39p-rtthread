@@ -7,8 +7,8 @@
 .\objects\telephone.o: ..\bsp\tom_data_conversion.h
 .\objects\telephone.o: ..\bsp\tom_interface.h
 .\objects\telephone.o: ..\bsp\74hc595\hc595.h
-.\objects\telephone.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\telephone.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\telephone.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\telephone.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\telephone.o: ..\bsp\ec20_at_cmd.h
 .\objects\telephone.o: ..\bsp\version.h
 .\objects\telephone.o: ..\lib\st_lib\inc\stm32f0xx_rtc.h
@@ -42,6 +42,6 @@
 .\objects\telephone.o: ..\lib\st_lib\inc\stm32f0xx_misc.h
 .\objects\telephone.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\telephone.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\telephone.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\telephone.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\telephone.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\telephone.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\telephone.o: ..\bsp\date_and_time.h

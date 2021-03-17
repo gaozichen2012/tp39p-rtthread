@@ -5,8 +5,8 @@
 .\objects\key.o: ..\bsp\tom_data_conversion.h
 .\objects\key.o: ..\bsp\tom_interface.h
 .\objects\key.o: ..\bsp\74hc595\hc595.h
-.\objects\key.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\key.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\key.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\key.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\key.o: ..\bsp\keyboard\keyboard.h
 .\objects\key.o: ..\bsp\poc.h
 .\objects\key.o: ..\bsp\ec20_at_cmd.h
@@ -44,5 +44,5 @@
 .\objects\key.o: ..\bsp\telephone.h
 .\objects\key.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\key.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\key.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\key.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\key.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\key.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

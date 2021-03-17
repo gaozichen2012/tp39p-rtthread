@@ -7,5 +7,5 @@
 .\objects\lcd_app.o: ..\bsp\tom_data_conversion.h
 .\objects\lcd_app.o: ..\bsp\tom_interface.h
 .\objects\lcd_app.o: ..\bsp\74hc595\hc595.h
-.\objects\lcd_app.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\lcd_app.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcd_app.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lcd_app.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h

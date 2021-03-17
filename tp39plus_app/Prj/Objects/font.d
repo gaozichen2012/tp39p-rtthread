@@ -5,8 +5,8 @@
 .\objects\font.o: ..\bsp\tom_data_conversion.h
 .\objects\font.o: ..\bsp\tom_interface.h
 .\objects\font.o: ..\bsp\74hc595\hc595.h
-.\objects\font.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\font.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\font.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\font.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\font.o: ..\lib\st_lib\inc\stm32f0xx.h
 .\objects\font.o: ..\lib\st_lib\inc\core_cm0.h
 .\objects\font.o: ..\lib\st_lib\inc\core_cmInstr.h

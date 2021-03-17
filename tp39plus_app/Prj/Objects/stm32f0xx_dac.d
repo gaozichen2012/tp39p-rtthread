@@ -2,7 +2,7 @@
 .\objects\stm32f0xx_dac.o: ..\lib\st_lib\inc\stm32f0xx_dac.h
 .\objects\stm32f0xx_dac.o: ..\lib\st_lib\inc\stm32f0xx.h
 .\objects\stm32f0xx_dac.o: ..\lib\st_lib\inc\core_cm0.h
-.\objects\stm32f0xx_dac.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f0xx_dac.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f0xx_dac.o: ..\lib\st_lib\inc\core_cmInstr.h
 .\objects\stm32f0xx_dac.o: ..\lib\st_lib\inc\core_cmFunc.h
 .\objects\stm32f0xx_dac.o: ..\lib\st_lib\inc\system_stm32f0xx.h

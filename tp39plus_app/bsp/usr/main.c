@@ -12,6 +12,8 @@
 #include "typewriting.h"
 
 #include <rtthread.h>
+#include "state.h"
+#include "Zpoc.h"
 #if 1
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -36,7 +38,7 @@ __IO uint32_t VectorTable[48] __attribute__((section(".RAMVectorTable")));
 #endif
 
 /* 消息队列控制块 */
-static struct rt_messagequeue mq;
+static struct rt_messagequeue gMsqid;
 /* 消息队列中用到的放置消息的内存池 */
 static rt_uint8_t msg_pool[2048];
 	
@@ -48,6 +50,18 @@ int app_vector_redirection(void)
 }
 INIT_BOARD_EXPORT(app_vector_redirection);
 
+void zpoc_sigalrm_fn(int sig)
+{
+	ZPOC_MSG_TYPE iMsg;
+	iMsg.ulType = ZPOC_MSG_TIMER;
+	iMsg.enMsgType = ZPOC_MSG_TIMER;
+	iMsg.pMsg = NULL;
+	iMsg.usMsgLen = 0;
+
+	//msgsnd(gMsqid, &iMsg, sizeof(iMsg), 0);
+	rt_mq_send(&gMsqid, &iMsg, sizeof(iMsg));
+}
+
 static void redled_shine_entry(void *parameter)
 {
 	int result;
@@ -56,16 +70,17 @@ static void redled_shine_entry(void *parameter)
     while(1)
     {
 /* 发送消息到消息队列中 */
-				buf++;
-				result = rt_mq_send(&mq, &buf, 1);
-				if (result != RT_EOK)
-				{
-						//rt_kprintf("rt_mq_send ERR\n");
-				}
+//				buf++;
+//				result = rt_mq_send(&gMsqid, &buf, 1);
+//				if (result != RT_EOK)
+//				{
+//						//rt_kprintf("rt_mq_send ERR\n");
+//				}
         set_gpio_state(GPIO_RED_LED, on);
         rt_thread_mdelay(500);
         set_gpio_state(GPIO_RED_LED, off);
         rt_thread_mdelay(500);
+			zpoc_sigalrm_fn(0);
     }
 }
 
@@ -76,7 +91,7 @@ static void greenled_shine_entry(void *parameter)
     while(1)
     {
 			/* 从消息队列中接收消息 */
-        if (rt_mq_recv(&mq, &buf, sizeof(buf), RT_WAITING_FOREVER) == RT_EOK)
+        //if (rt_mq_recv(&gMsqid, &buf, sizeof(buf), RT_WAITING_FOREVER) == RT_EOK)
 				{
 						set_gpio_state(GPIO_GREEN_LED, off);
 						rt_thread_mdelay(500);
@@ -88,6 +103,9 @@ static void greenled_shine_entry(void *parameter)
 
 int main(void)
 {
+	static rt_err_t iRes;
+	ZPOC_MSG_TYPE iMsg;
+	char buf = 0;
 	rt_err_t result;
 	rt_thread_t redled_thread,greenled_thread;
 	SysTick_Config(48000);
@@ -99,10 +117,10 @@ int main(void)
 		tom_interface_init();
 
     /* 初始化消息队列 */
-    result = rt_mq_init(&mq,
+    result = rt_mq_init(&gMsqid,
                         "mqt",
                         &msg_pool[0],             /* 内存池指向 msg_pool */
-                        1,                          /* 每个消息的大小是 1 字节 */
+                        sizeof(iMsg),                          /* 每个消息的大小是 1 字节 */
                         sizeof(msg_pool),        /* 内存池的大小是 msg_pool 的大小 */
                         RT_IPC_FLAG_FIFO);       /* 如果有多个线程等待，按照先来先得到的方法分配消息 */
 
@@ -126,18 +144,27 @@ int main(void)
     {
         rt_thread_startup(greenled_thread);
     }
-
-		return 1;
-		#if 0
+STATE_MgrInitialize(POC_STATE_INIT);
 	while (1)
 	{
 		#if 1
-		set_gpio_state(GPIO_RED_LED, off);
-		set_gpio_state(GPIO_GREEN_LED, on);
-		rt_thread_mdelay(500);
-		set_gpio_state(GPIO_RED_LED, on);
-		set_gpio_state(GPIO_GREEN_LED, off);
-		rt_thread_mdelay(500);
+		//iRes = msgrcv(gMsqid, &iMsg, sizeof(iMsg), 0, 0);
+		iRes = rt_mq_recv(&gMsqid, &iMsg, sizeof(iMsg), RT_WAITING_FOREVER);
+		//iRes=rt_mq_recv(&gMsqid, &buf, sizeof(buf), RT_WAITING_FOREVER);
+		if (iRes != RT_EOK)
+		{
+			set_gpio_state(GPIO_RED_LED, on);
+			continue;
+		}
+
+		STATE_MgrProcessMsg(iMsg.enMsgType, iMsg.usMsgLen, iMsg.pMsg);
+
+		if (iMsg.pMsg != NULL && iMsg.usMsgLen != 0)
+		{
+			free(iMsg.pMsg);
+		}
+
+	//STATE_MgrTerminate();
 		#else
 		main_process_key();
 
@@ -151,7 +178,5 @@ int main(void)
 #endif
 		#endif
 	}
-	#endif
 }
-
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

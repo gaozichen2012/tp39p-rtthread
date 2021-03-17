@@ -7,8 +7,8 @@
 .\objects\battery.o: ..\bsp\tom_data_conversion.h
 .\objects\battery.o: ..\bsp\tom_interface.h
 .\objects\battery.o: ..\bsp\74hc595\hc595.h
-.\objects\battery.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\battery.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\battery.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\battery.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\battery.o: ..\bsp\lcd\lcd_api.h
 .\objects\battery.o: ..\bsp\new_ui_data.h
 .\objects\battery.o: ..\bsp\pa_led_volume.h
@@ -47,6 +47,6 @@
 .\objects\battery.o: ..\bsp\telephone.h
 .\objects\battery.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\battery.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\battery.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\battery.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\battery.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\battery.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\battery.o: ..\bsp\language.h

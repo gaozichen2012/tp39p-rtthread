@@ -10,8 +10,8 @@
 .\objects\date_and_time.o: ..\bsp\tom_data_conversion.h
 .\objects\date_and_time.o: ..\bsp\tom_interface.h
 .\objects\date_and_time.o: ..\bsp\74hc595\hc595.h
-.\objects\date_and_time.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\string.h
-.\objects\date_and_time.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\date_and_time.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\date_and_time.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\date_and_time.o: ..\bsp\ec20_at_cmd.h
 .\objects\date_and_time.o: ..\lib\st_lib\inc\stm32f0xx_rtc.h
 .\objects\date_and_time.o: ..\lib\st_lib\inc\stm32f0xx.h
@@ -46,6 +46,6 @@
 .\objects\date_and_time.o: ..\bsp\telephone.h
 .\objects\date_and_time.o: ..\bsp\RTT\SEGGER_RTT.h
 .\objects\date_and_time.o: ..\bsp\RTT\SEGGER_RTT_Conf.h
-.\objects\date_and_time.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\date_and_time.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\date_and_time.o: C:\Keil_v5_525\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\date_and_time.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\date_and_time.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\date_and_time.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
