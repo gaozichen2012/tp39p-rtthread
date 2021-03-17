@@ -10,6 +10,7 @@
 #include "ui.h"
 #include "telephone.h"
 #include "typewriting.h"
+
 #include <rtthread.h>
 #if 1
 /* Private typedef -----------------------------------------------------------*/
@@ -34,6 +35,11 @@ __IO uint32_t VectorTable[48] __attribute__((section(".RAMVectorTable")));
 	} while (0)
 #endif
 
+/* 消息队列控制块 */
+static struct rt_messagequeue mq;
+/* 消息队列中用到的放置消息的内存池 */
+static rt_uint8_t msg_pool[2048];
+	
 int app_vector_redirection(void)
 {
 	rt_memcpy((void*)0x20000000, (void*)0x08004000, 48*4); 
@@ -41,30 +47,88 @@ int app_vector_redirection(void)
 	return 0;
 }
 INIT_BOARD_EXPORT(app_vector_redirection);
+
+static void redled_shine_entry(void *parameter)
+{
+	int result;
+	char buf = 'A';
 	
+    while(1)
+    {
+/* 发送消息到消息队列中 */
+				buf++;
+				result = rt_mq_send(&mq, &buf, 1);
+				if (result != RT_EOK)
+				{
+						//rt_kprintf("rt_mq_send ERR\n");
+				}
+        set_gpio_state(GPIO_RED_LED, on);
+        rt_thread_mdelay(500);
+        set_gpio_state(GPIO_RED_LED, off);
+        rt_thread_mdelay(500);
+    }
+}
+
+static void greenled_shine_entry(void *parameter)
+{
+	char buf = 0;
+	
+    while(1)
+    {
+			/* 从消息队列中接收消息 */
+        if (rt_mq_recv(&mq, &buf, sizeof(buf), RT_WAITING_FOREVER) == RT_EOK)
+				{
+						set_gpio_state(GPIO_GREEN_LED, off);
+						rt_thread_mdelay(500);
+						set_gpio_state(GPIO_GREEN_LED, on);
+						rt_thread_mdelay(500);
+        }
+    }
+}
+
 int main(void)
 {
+	rt_err_t result;
+	rt_thread_t redled_thread,greenled_thread;
 	SysTick_Config(48000);
 
 #if (DEF_IWDG)
 //init_iwdg();
 #endif
 
-	/* USER CODE BEGIN 2 */
-	main_init(0);
-#if 1
-	SEGGER_RTT_ConfigUpBuffer(0, "RTTUP", NULL, 0, SEGGER_RTT_MODE_NO_BLOCK_SKIP);
-	SEGGER_RTT_ConfigDownBuffer(0, "RTTDOWN", NULL, 0, SEGGER_RTT_MODE_NO_BLOCK_SKIP);
-	SEGGER_RTT_SetTerminal(0);
-	SEGGER_RTT_printf(0, "SEGGER_RTT_run\r\n");
-	//	SEGGER_RTT_printf(0,"%s-%d:ui.page=%s\r\n",__FILE__,__LINE__,uiPagebuf[UI.Page]);
-	//	SEGGER_RTT_printf(0,"%s %s-%d:Poc_AudioOnOff(Poc,OFF)%s\r\n",RTT_CTRL_BG_BRIGHT_GREEN,__FILE__,__LINE__,RTT_CTRL_RESET);
-	//	SEGGER_RTT_printf(0,"%s %s-%d:Poc->Config.InviteEnable=%d%s\r\n",RTT_CTRL_BG_BRIGHT_GREEN,__FILE__,__LINE__,Poc->Config.InviteEnable,RTT_CTRL_RESET);
+		tom_interface_init();
 
-#endif
+    /* 初始化消息队列 */
+    result = rt_mq_init(&mq,
+                        "mqt",
+                        &msg_pool[0],             /* 内存池指向 msg_pool */
+                        1,                          /* 每个消息的大小是 1 字节 */
+                        sizeof(msg_pool),        /* 内存池的大小是 msg_pool 的大小 */
+                        RT_IPC_FLAG_FIFO);       /* 如果有多个线程等待，按照先来先得到的方法分配消息 */
 
-	/* USER CODE END 2 */
+    if (result != RT_EOK)
+    {
+        rt_kprintf("init message queue failed.\n");
+        return -1;
+    }
+	
+	
+    redled_thread = rt_thread_create("ledshine", redled_shine_entry, RT_NULL,
+                                  192, RT_THREAD_PRIORITY_MAX / 2, 20);
+	    if (redled_thread != RT_NULL)
+    {
+        rt_thread_startup(redled_thread);
+    }
+		
+		greenled_thread = rt_thread_create("ledshine", greenled_shine_entry, RT_NULL,
+                                  192, RT_THREAD_PRIORITY_MAX / 2, 20);
+    if (greenled_thread != RT_NULL)
+    {
+        rt_thread_startup(greenled_thread);
+    }
 
+		return 1;
+		#if 0
 	while (1)
 	{
 		#if 1
@@ -87,6 +151,7 @@ int main(void)
 #endif
 		#endif
 	}
+	#endif
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
